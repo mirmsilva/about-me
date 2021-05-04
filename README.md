@@ -1,15 +1,15 @@
-# LAB - Number
+# LAB - 02
 
-## Project Name
+## About Me Guessing Game
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+An about me page with five yes or no questions so that my peers may get to know me better.
 
-### Author: Student/Group Name
+### Author: Miriam Silva
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
 * Any Links you used as reference
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* I learned to add a local image to my webpage
+* I found the repetiveness of the yes or no questions really helo me get faster in writing my code and helped me make less mistakes.
