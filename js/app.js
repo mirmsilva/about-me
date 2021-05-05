@@ -18,6 +18,8 @@ let upperCaseLocation = userLocation.toUpperCase();
 console.log(lowerCaseLocation);
 console.log(upperCaseLocation);
 
+let rightAnswerCount = 0;
+
 // Do I live in Seattle response alerts. Yes/No
 if (lowerCaseLocation === 'yes'|| lowerCaseLocation ==='y'){
   alert('You are right!');
@@ -43,6 +45,7 @@ console.log(upperCaseStudent);
 // Am I a student response alerts. Yes/No
 if (lowerCaseStudent ==='yes' || lowerCaseStudent=='y'){
   alert ('That is correct');
+  rightAnswerCount ++;
   //console.log ('right');
 }else if(lowerCaseStudent ==='no' || lowerCaseStudent ==='no'){
   alert ('Actually, I am a code fellows student!');
@@ -65,6 +68,7 @@ console.log(upperCaseIceCream);
 // Do I like Ice Cream response alerts. Yes/No
 if(lowerCaseIceCream === 'yes' || lowerCaseIceCream ==='y'){
   alert('That is correct! My favorite flavor is Rocky Road!');
+  rightAnswerCount ++;
   //console.log ('right');
 }else if(lowerCaseIceCream ==='no' || lowerCaseIceCream ==='n'){
   alert('What do you mean no? Of course I love ice cream!');
@@ -73,6 +77,8 @@ if(lowerCaseIceCream === 'yes' || lowerCaseIceCream ==='y'){
   alert('Hmm I did not understand your answer. Please respond with yes or no');
   //console.log ('try again');
 }
+
+alert ('you got this many correct Answers' + rightAnswerCount);
 
 // Am I cat lady? Yes/No
 let userCatLady = prompt('Am I a Cat Lady? yes/no');
@@ -115,5 +121,45 @@ if (lowerCaseHarry === 'yes' || lowerCaseHarry ==='y'){
   //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
-  //console.log ('try again');
 }
+
+
+
+
+//Number Guessing Game     
+let correctNum = 3;
+
+for (let i = 0; i<5; i++){
+  let userGuess = prompt (' Pick a number');
+  let numberGuess = parseInt(userGuess);
+  if (numberGuess === correctNum){
+    alert ('Great job!');
+    break;
+  } else if (numberGuess > correctNum){
+    alert('too high');
+  } else if (numberGuess < correctNum){
+    alert ('too low');
+  }
+}
+
+
+//Array Guessing Game
+let flavorArray = ['strawberry', 'chocolate', 'vanilla', 'rocky road','cookie dough'];
+let counter = 5;
+let rightAnswer = false;
+while(rightAnswer === false && counter >0){
+  alert ('you have ' + counter + ' guesses left');
+  let flavorGuess1 = prompt ('What is my favorite ice cream flavor?');
+  let flavorGuess = flavorGuess1.toLowerCase();
+  for(let i =0; i < flavorArray.length; i++){
+    if(flavorGuess === flavorArray[1]){
+    alert('correct!');
+    rightAnswer = true;
+    }
+  }
+  if (rightAnswer === false){
+    alert('you are incorrect');
+  }
+counter --;
+}
+alert ('These were the right answers ' + flavorArray );
