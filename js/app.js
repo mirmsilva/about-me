@@ -7,6 +7,9 @@ let userName = prompt ('Hello! What is your name?');
 console.log(userName);
 alert('Welcome '+ userName);
 
+//Right Answer Counter
+let rightAnswerCount = 0;
+
 // Question 1: Location
 let userLocation = prompt ('Do I live in Seattle? yes/no?');
 console.log(userLocation);
@@ -14,18 +17,13 @@ console.log(userLocation);
 let lowerCaseLocation = userLocation.toLowerCase();
 console.log(lowerCaseLocation);
 
-let rightAnswerCount = 0;
-
 //Question 1 Answers
 if (lowerCaseLocation === 'yes'|| lowerCaseLocation ==='y'){
   alert('You are right!');
-  //console.log ('right');
 }else if (lowerCaseLocation ==='no' || lowerCaseLocation ==='n'){
   alert('Actually, I do live in Seattle');
-  //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
-  //console.log ('try again');
 }
 
 // Question 2: Student
@@ -39,13 +37,10 @@ console.log(lowerCaseStudent);
 if (lowerCaseStudent ==='yes' || lowerCaseStudent=='y'){
   alert ('That is correct');
   rightAnswerCount ++;
-  //console.log ('right');
 }else if(lowerCaseStudent ==='no' || lowerCaseStudent ==='no'){
   alert ('Actually, I am a code fellows student!');
-  //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
-  //console.log ('try again');
 }
 
 // Question 3: Ice Cream
@@ -59,13 +54,10 @@ console.log(lowerCaseIceCream);
 if(lowerCaseIceCream === 'yes' || lowerCaseIceCream ==='y'){
   alert('That is correct! My favorite flavor is Rocky Road!');
   rightAnswerCount ++;
-  //console.log ('right');
 }else if(lowerCaseIceCream ==='no' || lowerCaseIceCream ==='n'){
   alert('What do you mean no? Of course I love ice cream!');
-  //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
-  //console.log ('try again');
 }
 
 // Question 4: Cats
@@ -79,13 +71,10 @@ console.log(lowerCaseCat);
 if (lowerCaseCat ==='yes' || lowerCaseCat ==='y'){
   alert ('Alot of people would agree with you!');
   rightAnswerCount ++;
-  //console.log ('right');
 }else if(lowerCaseCat ==='no' || lowerCaseCat ==='n'){
   alert('I am deeply obsessed with my cats');
-  //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
-  //console.log ('try again');
 }
 
 // Question 5: Harry Potter
@@ -99,10 +88,8 @@ console.log(lowerCaseHarry);
 if (lowerCaseHarry === 'yes' || lowerCaseHarry ==='y'){
   alert(userName + ', you are correct!')
   rightAnswerCount ++;
-  //console.log ('right');
 }else if (lowerCaseHarry === 'no' || lowerCaseHarry === 'n'){
   alert (userName + ' , you are looking at a Hufflepuff!');
-  //console.log ('wrong');
 }else{
   alert('Hmm I did not understand your answer. Please respond with yes or no');
 }
@@ -125,10 +112,9 @@ for (let i = 0; i<5; i++){
   }
 }
 
-
 // Array Guessing Game
 let flavorArray = ['strawberry', 'chocolate', 'vanilla', 'rocky road','cookie dough'];
-let counter = 5;
+let counter = 6;
 let rightAnswer = false;
 while(rightAnswer === false && counter >0){
   alert ('you have ' + counter + ' guesses left');
