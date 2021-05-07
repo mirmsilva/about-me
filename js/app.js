@@ -117,8 +117,11 @@ iceCream();
 cats();
 harryPotter();
 numberGame();
-flavorGame()
+flavorGame();
 
+
+
+// Below are the the orginal Questions before the turned into functions
 
 // // Question 1: Location
 // let userLocation = prompt ('Do I live in Seattle? yes/no?');
